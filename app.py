@@ -2,9 +2,8 @@ from flask import Flask, request, send_file, render_template
 import csv
 import os
 from flask_cors import CORS
-CORS(app)
-
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/", methods=["GET"])
 def index():
